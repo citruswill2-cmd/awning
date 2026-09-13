@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWNING — first page under the sign</title>
+  <meta name="description" content="Chris writes the first website for people starting a business, then hangs live work under the same awning so other sites get seen. For modern young adults and adults." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#050508",
+            line: "#4D8BFF",
+            heat: "#FF2B3A",
+            paper: "#E8E4DA",
+            mute: "#8B877C"
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "Impact", "sans-serif"],
+            sans: ["Manrope", "system-ui", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #050508; color: #E8E4DA; }
+    .neon { text-shadow: 0 0 18px rgba(77,139,255,.45); }
+    .heat-neon { text-shadow: 0 0 16px rgba(255,43,58,.4); }
+    .awning {
+      background-image: repeating-linear-gradient(
+        90deg,
+        #4D8BFF 0 28px,
+        #050508 28px 40px,
+        #FF2B3A 40px 68px,
+        #050508 68px 80px
+      );
+      box-shadow: 0 18px 40px rgba(0,0,0,.55);
+    }
+    .awning-lip {
+      background: linear-gradient(#0b0b12, #050508);
+      border-top: 1px solid rgba(232,228,218,.12);
+    }
+    .ticket {
+      background:
+        radial-gradient(circle at 0 18px, transparent 10px, #0a0a12 10.5px) left,
+        radial-gradient(circle at 100% 18px, transparent 10px, #0a0a12 10.5px) right,
+        #0a0a12;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+    }
+    .knob-live { box-shadow: 0 0 10px #4D8BFF; }
+    .knob-heat { box-shadow: 0 0 10px #FF2B3A; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-line focus:px-3 focus:py-2 focus:text-ink">Skip to content</a>
+
+  <div class="awning h-10 w-full sm:h-14" aria-hidden="true"></div>
+  <div class="awning-lip h-3 w-full" aria-hidden="true"></div>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-ink/92 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="font-mono text-[10px] uppercase tracking-[0.28em] text-line">03 · awning</span>
+        <span class="font-display text-2xl leading-none tracking-wide neon">AWNING</span>
+      </a>
+      <nav class="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.18em] text-mute">
+        <a href="#lanes" class="hover:text-paper">Lanes</a>
+        <a href="#board" class="hover:text-paper">Under the sign</a>
+        <a href="#start" class="text-heat hover:text-paper">Night drop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="mx-auto grid max-w-6xl gap-10 px-4 pb-20 pt-12 lg:grid-cols-12 lg:pt-16">
+      <div class="lg:col-span-7">
+        <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-line">Utah · first file, then the sign</p>
+        <h1 class="mt-4 font-display text-6xl leading-[0.86] tracking-wide text-paper sm:text-7xl lg:text-8xl">
+          THE SIGN<br /><span class="text-line">GOES UP</span><br /><span class="text-heat heat-neon">FIRST.</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-paper/80">
+          You want a business and you do not have a page. Or you have a page and the street still walks past it.
+          Chris writes the first HTML for modern young adults and adults, then hangs live work under one awning so the block looks up.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#start" class="inline-flex items-center bg-line px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink hover:bg-paper">Drop a brief</a>
+          <a href="#board" class="inline-flex items-center border border-white/20 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-paper hover:border-line hover:text-line">See who is hanging</a>
+        </div>
+      </div>
+
+      <aside class="reveal lg:col-span-5">
+        <div class="border border-white/15 bg-[#09090f] p-6">
+          <div class="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.22em] text-mute">
+            <span>Awning 03</span>
+            <span class="text-line">open after dark</span>
+          </div>
+          <p class="mt-5 font-display text-5xl leading-none tracking-wide">TWO LANES.<br />ONE STRIP.</p>
+          <ul class="mt-6 space-y-3 font-mono text-xs uppercase tracking-[0.14em] text-mute">
+            <li class="flex justify-between border-b border-white/10 pb-2"><span>No site yet · first HTML</span><span class="text-heat">heat</span></li>
+            <li class="flex justify-between border-b border-white/10 pb-2"><span>Live URL · hang it here</span><span class="text-line">lit</span></li>
+            <li class="flex justify-between"><span>You own the files</span><span class="text-paper">yes</span></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="lanes" class="border-t border-white/10">
+      <div class="mx-auto grid max-w-6xl md:grid-cols-2">
+        <article class="reveal border-b border-white/10 p-8 md:border-b-0 md:border-r md:p-10">
+          <span class="knob-heat mb-6 inline-block h-3 w-3 rounded-full bg-heat"></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-heat">Lane A · start</p>
+          <h2 class="mt-2 font-display text-5xl tracking-wide">You decided.<br />There is no page.</h2>
+          <p class="mt-4 max-w-md text-paper/75">Send one paragraph. Who it is for, what it should do, what you sell or show. You get a first HTML file you can drop on Vercel. Written for people who just decided — not for people who already have a brand deck.</p>
+        </article>
+        <article class="reveal p-8 md:p-10">
+          <span class="knob-live mb-6 inline-block h-3 w-3 rounded-full bg-line"></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">Lane B · show</p>
+          <h2 class="mt-2 font-display text-5xl tracking-wide">The site is live.<br />Nobody looks up.</h2>
+          <p class="mt-4 max-w-md text-paper/75">Send the URL. If it loads, it hangs under the awning next to other live work. Quiet pages get neighbors. Dead links stay in the back. That is how other websites get promoted without an ads account.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="border-t border-white/10">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-3">
+        <div class="reveal">
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">01</p>
+          <h3 class="mt-2 font-display text-3xl tracking-wide">One paragraph</h3>
+          <p class="mt-2 text-sm leading-relaxed text-paper/70">No intake software. Write what the shop is. Mail it. That is the brief.</p>
+        </div>
+        <div class="reveal">
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">02</p>
+          <h3 class="mt-2 font-display text-3xl tracking-wide">One HTML file</h3>
+          <p class="mt-2 text-sm leading-relaxed text-paper/70">Tailwind, light motion, yours. Drop it on Vercel. No lock-in, no CMS unless you ask later.</p>
+        </div>
+        <div class="reveal">
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-heat">03</p>
+          <h3 class="mt-2 font-display text-3xl tracking-wide">One awning</h3>
+          <p class="mt-2 text-sm leading-relaxed text-paper/70">Live work hangs in public. Starting work gets a first page. That is the whole studio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="board" class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-line">Under the sign</p>
+            <h2 class="mt-2 font-display text-5xl tracking-wide">Who is hanging tonight</h2>
+          </div>
+          <p class="max-w-sm text-sm text-mute">Blue means the URL loads. Red is studio heat. Gray means the public URL is not ready yet.</p>
+        </div>
+
+        <ul class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="knob-live h-2.5 w-2.5 rounded-full bg-line"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-line">live</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">Iris Onyx</h3>
+            <p class="mt-1 text-sm text-mute">Goth pop. Artist site.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-line hover:text-paper" href="https://iris0nyx.com" target="_blank" rel="noopener">iris0nyx.com</a>
+          </li>
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="knob-live h-2.5 w-2.5 rounded-full bg-line"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-line">live</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">DNC Computerz</h3>
+            <p class="mt-1 text-sm text-mute">Dee’s lot. Items for sale.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-line hover:text-paper" href="https://dnc-computerz.vercel.app" target="_blank" rel="noopener">dnc-computerz.vercel.app</a>
+          </li>
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="knob-heat h-2.5 w-2.5 rounded-full bg-heat"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-heat">studio</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">REDLINE</h3>
+            <p class="mt-1 text-sm text-mute">Studio page. Lives on sameweekhq for now.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-heat hover:text-paper" href="https://sameweekhq.vercel.app" target="_blank" rel="noopener">sameweekhq.vercel.app</a>
+          </li>
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="knob-live h-2.5 w-2.5 rounded-full bg-line"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-line">live</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">Daytape</h3>
+            <p class="mt-1 text-sm text-mute">Podcast + vlog first page.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-line hover:text-paper" href="https://daytape.vercel.app" target="_blank" rel="noopener">daytape.vercel.app</a>
+          </li>
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="h-2.5 w-2.5 rounded-full bg-mute"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">mispointed</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">Sameweek</h3>
+            <p class="mt-1 text-sm text-mute">Repo is live. sameweek.vercel.app currently serves CAST.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-mute hover:text-paper" href="https://github.com/citruswill2-cmd/sameweek" target="_blank" rel="noopener">github.com/citruswill2-cmd/sameweek</a>
+          </li>
+          <li class="reveal ticket border border-white/10 p-5">
+            <div class="flex items-center justify-between">
+              <span class="h-2.5 w-2.5 rounded-full bg-mute"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">404</span>
+            </div>
+            <h3 class="mt-4 font-display text-3xl tracking-wide">Laughline</h3>
+            <p class="mt-1 text-sm text-mute">Comedy draft in GitHub. laughline.vercel.app is not public yet.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-mute hover:text-paper" href="https://github.com/citruswill2-cmd/laughline" target="_blank" rel="noopener">github.com/citruswill2-cmd/laughline</a>
+          </li>
+          <li class="reveal border border-heat/40 bg-[#0a0a12] p-5 sm:col-span-2 lg:col-span-3">
+            <div class="flex items-center justify-between">
+              <span class="knob-heat h-2.5 w-2.5 rounded-full bg-heat"></span>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-heat">open hook</span>
+            </div>
+            <h3 class="mt-4 font-display text-4xl tracking-wide">Your shop</h3>
+            <p class="mt-1 max-w-xl text-sm text-mute">First page, or a live URL that needs a neighbor. Either one hangs under this strip.</p>
+            <a class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-heat hover:text-paper" href="#start">Take the hook</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="start" class="border-t border-white/10">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-heat">Night drop</p>
+          <h2 class="mt-2 font-display text-5xl tracking-wide">One field.<br />That is the brief.</h2>
+          <p class="mt-4 text-paper/75">Write who it is for and what the page should do. Mail opens with the paragraph already in it. Chris reads it at citruswill2@gmail.com.</p>
+        </div>
+        <form class="reveal lg:col-span-7" action="mailto:citruswill2@gmail.com?subject=AWNING%20brief" method="get" onsubmit="return goMail(event)">
+          <label for="brief" class="font-mono text-[11px] uppercase tracking-[0.2em] text-mute">The paragraph</label>
+          <textarea id="brief" name="body" rows="7" required placeholder="I want a site for ___ that does ___. It is for ___." class="mt-3 w-full border border-white/15 bg-ink p-4 font-sans text-base text-paper placeholder:text-mute/70 focus:border-line focus:outline-none"></textarea>
+          <button type="submit" class="mt-4 bg-heat px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-paper hover:bg-line hover:text-ink">Send the brief</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="awning h-3 w-full" aria-hidden="true"></div>
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-8 font-mono text-[10px] uppercase tracking-[0.2em] text-mute">
+      <span>AWNING · REDLINE first draft · files you own</span>
+      <span class="text-line">#4D8BFF</span>
+      <span class="text-heat">#FF2B3A</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    function goMail(e) {
+      e.preventDefault();
+      var text = document.getElementById("brief").value.trim();
+      var body = encodeURIComponent(text || "I want a first page.");
+      window.location.href = "mailto:citruswill2@gmail.com?subject=" + encodeURIComponent("AWNING brief") + "&body=" + body;
+      return false;
+    }
+    if (window.anime) {
+      anime({
+        targets: ".reveal",
+        opacity: [0, 1],
+        translateY: [14, 0],
+        delay: anime.stagger(60),
+        duration: 400,
+        easing: "easeOutQuad"
+      });
+    }
+  </script>
+</body>
+</html>
